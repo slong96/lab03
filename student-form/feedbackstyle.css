@@ -1,0 +1,10 @@
+.jumbotron {
+  background-color: rgb(255, 151, 168);
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background-color: #ffd0d0;
+}

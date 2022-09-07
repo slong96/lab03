@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Favorite Program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="favorite-program-style.css" type="text/css">
+  </head>
+
+
+  <body class="m-3">
+
+    <div class="jumbotron">
+      <h1>To Do List Application</h1>
+    </div>
+
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-4">
+        <div class="mx-3">
+          <p>For my favorite program, I took the To Do List project that I learned in Java Programming and added a database to it.
+            I realized when the user closes the program, it doesn't save the to-do text that was entered.
+            That bothered me, so I used SQLite database to help keep the data saved.
+            Now, when you open and close it, the program saves the to-do text that was entered.
+          </p>
+        </div>
+      </div>
+      <!--End of column-->
+
+      <!--Second column-->
+      <div class="col-md-4">
+        <div class="mx-3">
+          <p>Here is a sample of the code from my project.</p>
+
+          <pre><code>
+            while (resultSet.next()) {
+              String text = resultSet.getString("to_do");
+              toDo tDL = new toDo(text);
+              getAll.add(tDL);
+          }
+          return getAll;
+          </code></pre>
+
+          <p>You can view the full program <a href="https://github.com/slong96/toDoListApp/tree/main/ToDoListWithDatabase">here</a>.</p>
+
+        </div>
+      </div>
+      <!--End of column-->
+
+      <!--Third column-->
+      <div class="col-md-4">
+        <div class="mx-3">
+
+          <p>This is what the program looks like.</p>
+          <img src="program.png" alt="Preview" height="400">
+
+        </div>
+      </div>
+      <!--End of column-->
+
+    </div>
+
+  </body>
+
+
+</html>
